@@ -1,19 +1,12 @@
-const a = -5
-const b = 5
+let a = 80
+let b = 40
+let c = 60
 
-if (a > 0) {
-    console.log("positive")
-} else if (a < 0) {
-    console.log("negative")
-} else if (a == 0) {
-    console.log("zero")
-}
-
-if (b > 0) {
-    console.log("positive")
-} else if (b < 0) {
-    console.log("negative")
-} else if (b == 0) {
-    console.log("zero")
+if (a + b + c == 180) {
+    console.log(true)
+} else if (a + b + c != 180) {
+    console.log(false)
+} else if (a + b + c < 0) {
+    console.log("[ERRO] Âangulo(s) inválido(s).")
 }
 
