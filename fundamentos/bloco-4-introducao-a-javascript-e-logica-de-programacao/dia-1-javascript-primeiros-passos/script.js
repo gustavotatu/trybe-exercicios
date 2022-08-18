@@ -1,11 +1,19 @@
-const a = 5
-const b = 3
-const c = 8
+const a = -5
+const b = 5
 
-if (a > b && a > c) {
-    console.log(a)
-} else if (b > a && b > c) {
-    console.log(b)
-} else if (c > a && c > b) {
-    console.log(c)
+if (a > 0) {
+    console.log("positive")
+} else if (a < 0) {
+    console.log("negative")
+} else if (a == 0) {
+    console.log("zero")
 }
+
+if (b > 0) {
+    console.log("positive")
+} else if (b < 0) {
+    console.log("negative")
+} else if (b == 0) {
+    console.log("zero")
+}
+
