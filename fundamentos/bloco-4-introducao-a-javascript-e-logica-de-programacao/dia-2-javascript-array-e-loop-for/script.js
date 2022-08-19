@@ -1,14 +1,12 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let valor = null
-let media = null
+let comparador = []
+let numeroMaior = [0]
 
 for (let index = 0; index < numbers.length; index += 1) {
-    valor = valor + numbers[index]
-    media = valor / numbers.length
+    comparador.push(numbers[index])
+    if (comparador[comparador.length - 1] > numeroMaior[numeroMaior.length - 1]) {
+        numeroMaior.push(comparador[comparador.length - 1])
+    }
 }
 
-if (media > 20) {
-    console.log("valor maior que 20")
-} else {
-    console.log("valor menor ou igual a 20")
-}
+console.log(numeroMaior[numeroMaior.length - 1])
