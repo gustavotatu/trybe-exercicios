@@ -1,21 +1,18 @@
-let leitor = {
-    nome: 'Julia',
-    sobrenome: 'Pessoa',
-    idade: 21,
-    livrosFavoritos: [
-      {
-        titulo: 'O Pior Dia de Todos',
-        autor: 'Daniela Kopsch',
-        editora: 'Tordesilhas',
-      },
-    ],
-  };
+function verificaPalindromo(palavra) {
+    let index2 = 0
+    for (let index = palavra.length - 1; index >= 0; index -= 1) {
+        if (index === index2) {
+            return true;
+        } else if (palavra[index] === palavra[index2]) {
+            if (index2 == index + 1) {
+                return true;
+            } else {
+                index2 += 1
+            }
+        } else {
+            return false;
+        }
+    }
+}
 
-leitor.livrosFavoritos.push({
-    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
-    autor: 'JK Rowling',
-    editora: 'Rocco',
-  })
-
-console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos')
-
+console.log(verificaPalindromo('arara'))
