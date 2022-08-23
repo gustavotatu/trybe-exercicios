@@ -17,5 +17,5 @@ leitor.livrosFavoritos.push({
     editora: 'Rocco',
   })
 
-
+console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos')
 
