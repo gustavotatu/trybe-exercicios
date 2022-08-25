@@ -69,6 +69,13 @@
         function correction() {
             return document.getElementsByClassName("title")[0].innerText = 'Exercício 5.1 - JavaScript';
         } correction();
+
+        function upper() {
+            for (let index = 0; index < document.getElementsByTagName("p").length; index += 1) {
+                let parag = document.getElementsByTagName("p")[index];
+                parag.innerHTML = parag.innerHTML.toLocaleUpperCase();
+            }
+        } upper();
     </script>
   </body>
 </html>
