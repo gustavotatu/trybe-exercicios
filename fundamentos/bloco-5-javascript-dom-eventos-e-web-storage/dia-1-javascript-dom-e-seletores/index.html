@@ -76,6 +76,12 @@
                 parag.innerHTML = parag.innerHTML.toLocaleUpperCase();
             }
         } upper();
+
+        function console() {
+            for (let index = 0; index < document.getElementsByTagName("p").length; index += 1) {
+                console.log(document.getElementsByTagName("p")[index].innerText);
+            } 
+        } console();
     </script>
   </body>
 </html>
