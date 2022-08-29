@@ -15,15 +15,13 @@ function createDaysOfTheWeek() {
   
   // Escreva seu código abaixo.
   let sexta = "day friday";
+  let feriado = "day holiday";
+  let sextaFeriado = "day holiday friday";
   let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   const dias = document.getElementById("days");
   for (index = 0; index < decemberDaysList.length; index += 1) {
   let litem = document.createElement("li");
   litem.innerHTML = decemberDaysList[index];
-  litem.className = "day";
-  if (decemberDaysList[index] === 24 || decemberDaysList[index] === 31) {
-    litem.className = "day holiday"; 
-  };
   switch (decemberDaysList[index]) {
     case 4:
         litem.className = sexta;
@@ -37,9 +35,20 @@ function createDaysOfTheWeek() {
         litem.className = sexta;
         break;
 
-    case 25:
-        litem.className = "day holiday friday";
+    case 24:
+        litem.className = feriado;
         break;
-  }
+
+    case 25:
+        litem.className = sextaFeriado;
+        break;
+
+    case 31:
+        litem.className = feriado;
+        break;
+
+    default:
+      litem.className = "day";
+  };
   dias.appendChild(litem);
-  }
+  };
