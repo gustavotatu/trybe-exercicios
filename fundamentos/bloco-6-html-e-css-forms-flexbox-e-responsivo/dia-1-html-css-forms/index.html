@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoção Viagem</title>
+</head>
+<body>
+    <header><h1>Preencha seus dados para participar!</h1></header>
+    <form action="" method="GET" enctype="multipart/form-data">
+        <label for="nome-completo">Nome completo: 
+            <input type="text" name="nome" id="nome-completo">
+        </label>
+        <br>
+        <label for="email-completo">E-mail: 
+            <input type="email" name="email" id="email-completo">
+        </label>
+        <br>
+        <p>Destino Preferido: </p>
+        <label for="cidade">
+            <input type="radio" name="destino" id="cidade" value="Cidade">Cidade
+        </label>
+        <label for="campo">
+            <input type="radio" name="destino" id="campo" value="Campo">Campo
+        </label>
+        <label for="praia">
+            <input type="radio" name="destino" id="praia" value="Praia">Praia
+        </label>
+        <label for="montanhas">
+            <input type="radio" name="destino" id="montanhas" value="Montanhas">Montanhas
+        </label>
+        <br>
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <textarea name="texto-promo" id="" cols="30" rows="10"></textarea>
+        <br>
+        <p>Qual a melhor data para realizar sua viagem?</p>
+        <input type="date">
+        <br>
+        <label for="receber-promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            <input type="checkbox" id="receber-promo">
+        </label>
+        <br>
+        <label for="permissao-fotos">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            <input type="checkbox" id="permissao-fotos">
+        </label>
+        <input type="submit" id="enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
