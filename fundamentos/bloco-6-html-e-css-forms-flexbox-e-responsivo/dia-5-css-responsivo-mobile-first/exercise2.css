@@ -90,3 +90,49 @@ footer p {
         font-size: 18px;
     }
 }
+
+@media screen and (min-width: 800px) {
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav {
+        width: 30%;
+        border: none;
+        justify-content: space-around;
+    }
+
+    .asides {
+        flex-direction: column;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    .aside-one {
+        margin-top: -50px;
+    }
+
+    .aside-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
