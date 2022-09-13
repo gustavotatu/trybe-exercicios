@@ -61,3 +61,32 @@ footer {
 footer p {
     max-width: 80%;
 }
+
+@media screen and (min-width: 619px) {
+
+    .asides {
+        margin-top: 110px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header {
+        margin-top: -110px;
+    }
+
+    .aside-one {
+        margin-top: 0px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font: 22px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
