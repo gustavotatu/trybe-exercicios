@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    margin: 20px;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    border: solid 1px rgb(36, 36, 36);
+    width: 100%;
+    margin-top: -125px;
+    margin-left: -20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+nav {
+    border: solid 1px rgb(36, 36, 36);
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.aside-one {
+    margin-top: 125px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    margin-left: -20px;
+}
+
+footer p {
+    max-width: 80%;
+}
