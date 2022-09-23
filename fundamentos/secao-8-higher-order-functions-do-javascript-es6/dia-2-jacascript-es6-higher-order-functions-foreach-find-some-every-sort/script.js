@@ -65,7 +65,7 @@ const books = [
   function authorBornIn1947() {
     // escreva aqui o seu código
     const year = books.find(element => element.author['birthYear'] === 1947);
-    return year.author.name
+    return year.author.name;
   }
 
   console.log(authorBornIn1947())
