@@ -3,5 +3,4 @@ SELECT
     ROUND(MIN(salary), 2),
     ROUND(SUM(salary), 2),
     ROUND(AVG(salary), 2)
-FROM
-    employees;
+FROM employees;
