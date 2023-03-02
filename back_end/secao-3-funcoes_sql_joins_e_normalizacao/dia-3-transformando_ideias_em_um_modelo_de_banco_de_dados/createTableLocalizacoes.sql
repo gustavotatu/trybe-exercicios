@@ -1,0 +1,4 @@
+CREATE TABLE localizacoes(
+local_id INT PRIMARY KEY AUTO_INCREMENT,
+habitat VARCHAR(100) NOT NULL
+);

@@ -1,0 +1,4 @@
+CREATE TABLE generos(
+genero_id INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(5) NOT NULL
+);
